@@ -1,0 +1,26 @@
+
+# <url> anasayfasına gidilir.
+* <url> Sayfasına git
+
+#Bannerı kapat
+* "//button[@aria-label='Close Message']" tıkla bannerı kapat
+
+#Arama kısmında <adres> aratılır ve adres seçilir.
+* "//div[@class='district-search-button__text']" Xpathli elementi bul ve adresi <adres> yaz.
+
+#Aramadan önce tıkla
+* "//div[@class='subheader-overlay js-subheader-overlay']" tıkla bannerı kapat
+
+#Arama kısmında <key> aratılır ve çıkan ilk seçenek seçilir.
+* "(//input[@type='text'])[1]" Xpathli elementi bul ve <key> yaz.
+* "(//button[@class='js-product-search-button btn product-search__button'])[1]" arama butonuna tıkla
+* "//div[@class='products']" Seçenekler arasından çıkan ilk seçenek seçilir.
+
+#Çıkan ilk seçenek seçilir.
+* "//div[@class='products products--category js-ajax-category-products']" Seçenekler arasından çıkan ilk seçenek seçilir.
+
+#Ürün detay sayfasından sepete eklenir.
+*Ürün detay sayfasından "//button[@type='button']"'e tıklanrak sepete eklenir.
+
+#Ödemeye ilerle butonuna tıklanır.
+*Sepette "(//button[@type='button'])[1]"'e tıklanarak ilerlenir.
